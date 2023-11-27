@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One-Time Pad Encryption and Decryption</title>
+    <link rel="stylesheet" href="shift.css">
+</head>
+<body style="background-image: url('./assets/images/image6.jpg') ;background-size:cover;">
+ <div>
+<a href="index.html" class="back"><---Back to Home Page</a>
+</div>
+
+<br>
+
+<div class="container">
+
+    <h1>One-Time Pad Encryption and Decryption</h1>
+
+    <label for="inputText">Enter Text:</label>
+    <textarea id="inputText" placeholder="Enter text..."></textarea>
+
+    <label for="otpKey">Enter One-Time Pad Key:</label>
+    <textarea id="otpKey" placeholder="Enter OTP key..."></textarea>
+<br>
+    <button onclick="encrypt()">Encrypt</button>
+    <button onclick="decrypt()">Decrypt</button>
+
+   
+    <div id="result" readonly></textarea>
+</div>
+<script src="oneTimePad.js"></script>
+</body>
+</html>

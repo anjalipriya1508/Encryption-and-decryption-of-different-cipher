@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monoalphabetic Substitution Cipher Encryption and Decryption</title>
+     <link rel="stylesheet" href="shift.css">
+</head>
+<body style="background-image: url('./assets/images/image15.jpg');background-size:cover;">
+<div>
+<a href="index.html" class="back"><---Back to Home Page</a>
+</div>
+<div class="container">
+    <h1>Monoalphabetic Substitution Cipher</h1>
+
+    <label for="inputText">Enter Text:</label>
+    <textarea id="inputText" rows="5" placeholder="Enter text..."></textarea>
+
+    <label for="encryptionKey">Encryption Key:</label>
+    <input type="text" placeholder="Leave empty for random permutation">
+<br>
+
+    <button onclick="generatePermutation()">Generate Random Permutation</button>
+
+<div id="encryptionKey" readonly></div>
+
+
+
+    <button onclick="encrypt()">Encrypt</button>
+    <button onclick="decrypt()">Decrypt</button>
+    <div id="outputText" readonly></div>
+</div>
+    <script src="monoalphabeticCipher.js"></script>
+</body>
+</html>

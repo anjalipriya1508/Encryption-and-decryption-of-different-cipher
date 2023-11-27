@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shift Cipher</title>
+    <link rel="stylesheet" href="shift.css">
+</head>
+<body style="background-image: url('encryption.jpg') ;background-size:cover;">
+   <div>
+<a href="index.html" class="back"><---Back to Home Page</a>
+</div>
+
+<br>
+    <div class="container">
+        <h1>Shift Cipher</h1>
+        <label for="message"><h3>Enter Message: </h3></label>
+        
+        <textarea id="message" rows="5" required></textarea>
+        <label for="shift"><h3>Shift Value: </h3></label>
+        <input type="number" id="shift" placeholder="Enter shift value" required>
+        <br>
+        <button onclick="encrypt()">Encrypt</button>
+
+        
+         <button onclick="decrypt()">Decrypt</button>
+        <div id="result" rows="5"></div>
+    </div>
+  
+    <script src="shift.js"></script>
+</body>
+</html>
