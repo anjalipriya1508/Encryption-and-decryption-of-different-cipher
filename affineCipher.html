@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="shift.css">
+    <title>Affine Cipher</title>
+</head>
+<body style="background-image: url('./assets/images/image11.jpg');background-size:cover;">
+
+<div>
+<a href="index.html" class="back"><---Back to Home Page</a>
+</div>
+    <div class="container">
+        <h1>Affine Cipher</h1>
+        <textarea id="inputText" placeholder="Enter text..." rows="4"></textarea>
+        <label for="shift">Enter Key A:</label>
+        <input type="number" id="keyA" placeholder="Key A">
+        <label for="shift">Enter Key B:</label>
+        <input type="number" id="keyB" placeholder="Key B">
+<br><br>
+        <button onclick="encrypt()">Encrypt</button>
+        <button onclick="decrypt()">Decrypt</button>
+        <div id="result"></div>
+    </div>
+
+    <script src="affineCipher.js"></script>
+</body>
+</html>

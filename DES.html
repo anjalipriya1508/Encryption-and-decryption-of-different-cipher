@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+    <link rel="stylesheet" href="shift.css">
+    <title>DES Cipher</title>
+</head>
+<body  style="background-image: url('./assets/images/image15.jpg');background-size:cover;">
+     <div>
+<a href="index.html" class="back"><---Back to Home Page</a>
+</div>
+    <div class="container">
+        <h1>DES Cipher</h1>
+        <label for="inputText">Enter Text:</label>
+        <textarea id="inputText" placeholder="Enter text..." rows="5"></textarea>
+        <label for="key">Enter Key:</label>
+        <input type="text" id="key" placeholder="Enter key...">
+<br><br>
+        <button onclick="encrypt()">Encrypt</button>
+        <button onclick="decrypt()">Decrypt</button>
+        
+        <label for="outputText"></label>
+        <div id="outputText" placeholder="Result..."></div>
+    </div>
+
+    <script src="DES.js"></script>
+</body>
+</html>

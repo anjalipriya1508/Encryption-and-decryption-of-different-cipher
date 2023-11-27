@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="shift.css">
+    <title>Vigenere Cipher</title>
+</head>
+<body style="background-image: url('./assets/images/image12.jpg');background-size:cover;">
+<div>
+<a href="index.html" class="back"><---Back to Home Page</a>
+</div>
+    <div class="container">
+        <h1>Vigenere Cipher</h1>
+        <label for="inputText"><h3>Enter Text: </h3></label>
+        <textarea id="inputText" rows="5"></textarea>
+        <label for="key"><h3>Enter Key:</h3></label>
+        <input type="text" id="key" placeholder="Enter Key value">
+<br>
+        <button onclick="encrypt()">Encrypt</button>
+        <button onclick="decrypt()">Decrypt</button>
+       
+        <div id="outputText"  readonly></div>
+    </div>
+
+    <script src="vigenereencrypt.js"></script>
+</body>
+</html>
